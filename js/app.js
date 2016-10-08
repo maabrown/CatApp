@@ -36,6 +36,10 @@ var Cat = function(data) {
 	this.level = ko.computed(function() {
 		if (this.clickCount() >= 10)
 			this.catLevel('Infant');
+		if (this.clickCount() >= 20)
+			this.catLevel('Kitten');
+		if (this.clickCount() >= 30)
+			this.catLevel('Tiger');
 		}, this)
 }
 

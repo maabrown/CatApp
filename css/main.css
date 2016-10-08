@@ -1,0 +1,18 @@
+.title {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+#cat-list {
+	text-align: center;
+	color: black;
+}
+
+.container {
+	background-color: #3071db;
+	color: white;
+}

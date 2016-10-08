@@ -1,4 +1,5 @@
-ud989-cat-clicker-ko-starter
-============================
+Cat Clicker App
+===============
 
-ud989-cat-clicker-ko-starter
+Small little app I have used following Udacity's class on KnockoutJS
+
