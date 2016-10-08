@@ -1,0 +1,36 @@
+Pass object literal into cat constructor function - you give a parameter
+
+var Cat = function(data) {
+
+} -- this is me passing in the object literal into the constructor function
+
+every time you want a new cat you to create a 'new' Cat in the ViewModel:
+
+this.currentCat = ko.observable( new Cat({
+	clickCount: 0,
+	name: 'Tabby',
+	imgSrc: ...,
+	nicknames: ['Blue', 'Red']
+}));
+
+
+go back up the Cat function and redo the characteristics of it to be reflective of the object literal you passing in using the param 'data' (which is the new Cat that you've created in the ViewModel)
+
+Cat.clickout in the VM is data.clickCount in the model Cat fxn
+
+Put the information that you need for the Cats at the top of the file
+
+In the VM you create an observable array that will match to them
+
+this.catList = ko.observableArray([]);
+
+Make the cats in the VM and you want to store them in n observable array: this.catList = ko.observableArray([]);
+
+Need to make a new 'Cat' from each of the objects in the initialCats array - which means you have to loop over them
+
+For each cat you loop over them and push them to the catList array you made  as new 'Cat'
+
+self maps to VM - can use var self = this to keep things organized
+
+after moving the first cat info into the initialCats array - you can refactor and this.currentCat can be linked to the catList
+
