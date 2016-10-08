@@ -51,23 +51,26 @@
             <div class="col-md-12">
                 <div data-bind="with: currentCat" id="cat">
 
-                    <h2 data-bind="text: name"></h2>
+                    <div class="col-md-5">
+                        <h2 data-bind="text: name"></h2>
 
-                    <h4>Age: </h4><div data-bind="text: clickCount" class="catInfo"></div>
-                    <br>
+                        <h4>Age: </h4><div data-bind="text: clickCount" class="catInfo"></div>
+                        <br>
 
-                    <h4>Level: </h4><div data-bind="text: catLevel" class="catInfo"></div>
-                    <br>
-                    
-                    <h4>NickNames:</h4>
-                    <ul data-bind="foreach: nickNames">
-                        <li>
-                            <span data-bind="text: $data"></span>
-                        </li>
-                    </ul>
+                        <h4>Level: </h4><div data-bind="text: catLevel" class="catInfo"></div>
+                        <br>
+                        
+                        <h4>NickNames:</h4>
+                        <ul data-bind="foreach: nickNames">
+                            <li>
+                                <span data-bind="text: $data"></span>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <img src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
-
+                    <div class="col-md-4">
+                        <img src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
+                    </div>
                 </div>
             </div>
         </div>
